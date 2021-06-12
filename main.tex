@@ -1,0 +1,90 @@
+\documentclass[twoside]{article}
+
+
+\usepackage{amssymb}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{amsmath}
+\usepackage[brazilian]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[sc]{mathpazo} 
+\linespread{1.05}
+\usepackage{microtype}
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption}
+\usepackage{lettrine}
+\usepackage{graphicx}
+
+\usepackage[hmarginratio=1:1,top=20mm,bottom=35mm,right=15mm,left=15mm,columnsep=20pt]{geometry}
+\usepackage{multicol} 
+\usepackage{booktabs}
+\usepackage{float} 
+\usepackage{subfigure}
+\usepackage{paralist} 
+\usepackage{hyperref} 
+\usepackage{abstract}
+\usepackage{braket}
+\renewcommand{\abstractnamefont}{\normalfont\bfseries}
+\renewcommand{\abstracttextfont}{\normalfont\small\itshape}
+\usepackage{titlesec}
+\renewcommand\thesection{\Roman{section}} 
+\renewcommand\thesubsection{\Roman{subsection}} 
+\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} 
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{}
+
+\DeclareMathOperator{\sen}{sen}
+
+\usepackage{fancyhdr} 
+\pagestyle{fancy} 
+\fancyhead{} 
+\fancyfoot{} 
+
+%aqui SIUNITX
+\usepackage{siunitx}
+
+\DeclareSIUnit\px{px}
+
+%AQUI VOCE COLOCA A SIGL do grupo
+\fancyhead[C]{4302313 - Física Experimental V $\bullet$ Experimento de Franck-Hertz $\bullet$ GN10}
+\fancyfoot[RO,LE]{\thepage} \newenvironment{Figure}
+{\par\medskip\noindent\minipage{\linewidth}}
+{\endminipage\par\medskip}
+
+% AQUI VOCÊ COLOCA O TÍTULO DO SEU EXPERIMENTO.
+
+\title{\vspace{-18mm}\fontsize{18pt}{20pt}\selectfont\textbf{Experimento de Franck-Hertz}} 
+
+
+% AQUI VOCE COLOCA O NOME DOS AUTORES DO TRABALHO
+
+\author{
+\large
+\textsc{João Victor Ortolan, Marcos Pereira, Thiago Aguiar}\\[2mm]
+\large Instituto de Física da Universidade de São Paulo - IFUSP 
+%\vspace{2mm}
+}
+\date{}
+
+\begin{document}
+\maketitle
+
+\thispagestyle{fancy} 
+ 
+%___________________________________
+
+\begin{abstract}
+    
+
+\end{abstract}
+%
+\vspace{0.5cm}
+\begin{multicols}{2}
+
+\section{Introdução}
+\section{Descrição experimental}
+\section{Resultados e Discussão}
+\section{Conclusão}
+
+\bibliographystyle{unsrt}
+\bibliography{bibliography}
+
+\end{multicols}
+\end{document}
